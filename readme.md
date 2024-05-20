@@ -124,13 +124,13 @@ Baris kode di atas merupakan baris kode yang di gunakan untuk menghapus data bar
                             print(f"Message : Barang dengan nama '{nama_barang}' telah berhasil dihapus")
                             break
 
-    kode di atas merupakan kode cek poin perulangan for yang digunakan untuk mengecek apakah input dari pengguna memenuhi syarat atau tidak untuk melanjutkan ke step berikutnya. jika iya, maka kode akan menghapus data barang dan kemudian memunculkan informasi bahwa data barang telah di hapus. Jika tidak, program akan melanjutkannya ke cek poin berikutnya
+    kode di atas merupakan kode sub bagian dari kode pada poin "Looping dan Percabangan 2" yang berupa cek poin perulangan for yang digunakan untuk mengecek apakah input dari pengguna memenuhi syarat atau tidak untuk melanjutkan ke step berikutnya. jika iya, maka kode akan menghapus data barang dan kemudian memunculkan informasi bahwa data barang telah di hapus. Jika tidak, program akan melanjutkannya ke cek poin berikutnya
 
 - Looping dan percabangan 4
 
                       else:
                         print(f"Message : Barang dengan nama '{nama_barang}' tidak ditemukan.")  
-     kode di atas digunakan untuk menampilkan pesan bahwa barang yang ingin di hapus tidak ada.
+     kode di atas merupakan bagian dari poin "Looping dan percabangan 3" yang digunakan untuk menampilkan pesan bahwa barang yang ingin di hapus tidak ada atau tidak di temukan
 
 - Looping dan perulangan 5
 
@@ -141,26 +141,43 @@ Baris kode di atas merupakan baris kode yang di gunakan untuk menghapus data bar
                      print()
                 break
             return()
-     kode diatas di eksekusi jika cek poin 'elif' sebelumnya tidal terpenuhi dengan menampilkan output bahwa input yang di masukkan oleh pengguna tidak valid
+     kode diatas merupakan baris terakhir dari fungsi hapus barang yang akan dieksekusi jika cek poin 'elif' sebelumnya tidak terpenuhi dengan menampilkan output bahwa input yang di masukkan oleh pengguna tidak valid 
 
 d. Fungsi Tampilkan Barang
 
         def tampil_barang():
-            print('========================== DATA BARANG ===========================')
-            print()
-            if not data_barang: # Cek poin yang berisi fungsi yang akan dijalankan jika data_barang[list] tidak berisi apapun alias kosong
+            if not data_barang:
                 print("Data Barang Kosong")
-                print()
-                print('==================================================================')
-            else: # Cek poin yang akan dijalankan jika cek poin sebelumnya tidak terpenuhi syaratnya
+            else:
                 print('Berikut Daftar Barang Yang Telah Anda Input:')
-                # Digunakan untuk menampilkan data barang dengan index barang tersebut.
                 for nomor, barang in enumerate(data_barang):  
                     print(f"{nomor}. {barang['nama barang']} dengan jumlah barang ""=", F"{barang['jumlah barang']}")
                     continue
-                print('==================================================================') 
             return()
+  kode di atas merupakan baris kode dari fungsi 'tampil_barang' dimana fungsi tersebut digunakan untuk menampilkan barang yang telah di input oleh pengguna. Berikut rinciannya:
+  - Mengecek data barang 1
 
+         def tampil_barang():
+                    if not data_barang:
+                        print("Data Barang Kosong")
+    kode di atas menggunakan operasi logika boolean yaitu negasi untuk mencari tau apakah variabel 'data_barang' memiliki nilai atau tidak. cara kerjanya adalah: <br></br>
+    a. kata kunci 'not' digunakan sebagai negasi logika (pembalikan nilai) yaitu membalikan nilai dari nilai yang sebenarnya. misalnya a = true maka not a = false <br>
+    b. blok kode if harus bernilai true untuk menjalankan prosesnya. Tetapi,<br>
+    c. dalam kode ini variabel 'data_barang' kosong bernilai false karena variabel tersebut tidak memiliki nilai, oleh karena itu maka negasi 'not' digunakan untuk membalikan nilai dari nilai boolean variabel tersebut menjadi true dan membuat baris kode selanjutnya di eksekusi <br>
+    d. jika variabel 'data_barang' memiliki nilai, maka akan bernilai true dan negasi 'not' digunakan untuk membalikan nilai dari nilai boolean variabel menjaddi false dan blok 'else' akan dijalankan <br>
+    e. prinsip dari kode ini adalah jika tidak ada nilai maka variabel bernilai 'true' (setelah proses pembalikan) dan kode pada baris selanjutnya akan di jalankan, jika kode memiliki nilai maka kode akan masuk ke cek poin berikutnya yaitu cek poin 'else' <br>
+
+ - Mengecek data barang 2
+   
+                  else:
+                print('Berikut Daftar Barang Yang Telah Anda Input:')
+                for nomor, barang in enumerate(data_barang):  
+                    print(f"{nomor}. {barang['nama barang']} dengan jumlah barang ""=", F"{barang['jumlah barang']}")
+                    continue
+            return()
+   Blok kode ini merupakan cek poin terkhir dari mengecek 'data_barang' dimana kode ini akan dijalankan jika cek poin pertama yaitu 'if' bernilai false. kode ini akan memberikan output "VALUE" dari isi data dictionary di dalam variabel 'nama barang' dan 'jumlah barang' di dalam dictionary tersebut dan outputnya juga akan menampilkan index dari output tersebut dengan menggunakan fungsi 'enumerate'
+      
+  
 
 
   
