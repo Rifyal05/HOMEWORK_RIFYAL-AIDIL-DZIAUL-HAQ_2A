@@ -14,14 +14,14 @@ a. data list kosong
   Contoh output di atas merupakan output yang akan muncul ketika anda memanggil 'data_barang' pada program setelah anda menambahkan data barang melalui fungsi 'tambah_barang'.<br></br>
   b. Fungsi tambah barang
 
-    def tambah_barang():
-        nama_barang   = str(input('Masukan nama barang    : ')) 
-        nama_barang   = nama_barang.upper()
-        jumlah_barang = int(input('Masukkan jumlah barang : ')) 
-        data_baru = {'nama barang': nama_barang, 'jumlah barang': jumlah_barang}
-        data_barang.append(data_baru)
-        print(f'Message : Data Barang Berupa {nama_barang} Berhasil Di Tambahkan')
-        return()
+      def tambah_barang():
+          nama_barang   = str(input('Masukan nama barang    : ')) 
+          nama_barang   = nama_barang.upper()
+          jumlah_barang = int(input('Masukkan jumlah barang : ')) 
+          data_baru = {'nama barang': nama_barang, 'jumlah barang': jumlah_barang}
+          data_barang.append(data_baru)
+          print(f'Message : Data Barang Berupa {nama_barang} Berhasil Di Tambahkan')
+          return()
 Baris diatas merupakan fungsi untuk menambahkan data barang kedalam list ('data_barang')  yang terdiri dari baris :
 - Input nama
 
