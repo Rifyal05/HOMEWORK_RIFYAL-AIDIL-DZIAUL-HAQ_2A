@@ -310,4 +310,4 @@ B. Program utama
 kode diatas digunakan sebagai kode yang akan dijalankan pengguna dengan memasukkan pilihan apa yang akan di pilih oleh pengguna. kemudian kode yang dijalankan akan menjalankan fungsi modul berdasarkan pilihan pengguna dengan 'exorcist' sebagai jembatan antar modul.
 
 Link  
-<a href="https://github1s.com/Rifyal05/HOMEWORK_RIFYAL-AIDIL-DZIAUL-HAQ_2A/edit/main/readme.md"> Lihat kode di GitHub1s</a>
+<a href="https://github1s.com/Rifyal05/HOMEWORK_RIFYAL-AIDIL-DZIAUL-HAQ_2A"> Lihat kode di GitHub1s</a>
