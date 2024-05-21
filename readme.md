@@ -219,8 +219,28 @@ e. cek data barang
   - sub perulangan dan percabangan 2
  
         if keyword in barang['nama barang']:
-    kode di atas digunakan untuk menegecek apakah 'keyword' yang berada pada "iterasi" 'barang' ada di variabel 'data_barang' dengan variabel dictionary 'nama_barang' yang berada dalam data list 'data_barang'
-  
+    kode di atas digunakan untuk menegecek apakah 'keyword(Value input)' yang berada pada "iterasi" 'barang' ada di dalam variabel 'data_barang' dengan variabel dictionary 'nama_barang' yang berada dalam data list 'data_barang' ada atau tidak.
+		  
+  - sub perulangan dan percabangan 3
+ 
+		  print(f"{i}. {barang['nama barang']} dengan jumlah barang = {barang['jumlah barang']}")
+		  found = True
+		  i+=1
+    kode di atas akan mencetak barang dan jumlah barang yang telah di input oleh pengguna. kemudia menguah variabel 'found' menjadi bernilai true. kemudia 'i+=1' digunakan untuk membuat nomor dari setiap output yang di tampilkan
 
+  - sub perulangan dan percabangan 4
+	 
+	    if not found:
+	    print(f"Uhhh maaf tapi barang yang anda cari menggunakan kata kunci '{keyword}' tidak ditemukan.")
+	    return()
+    kode di atas adalah cek poin terakhir yang akan dijalankan jika found bernilai 'true', tetapi karena barang yang tidak ada bernilai 'false' sedangkan blok 'if' harus bernilai true, maka penggunaan fungsi 'not' ini di perlukan untuk membalikkan nilai dari yang sebelumnya yaitu 'false' menjadi 'true'. setelah itu mencetak pesan terkait ketidak adaan barangnya.
 
-  
+f. edit data
+
+	def edit_data():
+	    index_barang = int(input('Masukan index barang : '))
+	    nama_barang = str(input('Masukan nama barang: ')).upper()
+	    jumlah_barang = int(input('Masukkan jumlah barang: '))
+	    data_barang[index_barang] = {'nama barang': nama_barang, 'jumlah barang': jumlah_barang}
+	    print(f"Message : Data barang dengan index {index_barang} telah diubah.") 
+	    return()
