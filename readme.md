@@ -176,6 +176,23 @@ d. Fungsi Tampilkan Barang
                     continue
             return()
    Blok kode ini merupakan cek poin terkhir dari mengecek 'data_barang' dimana kode ini akan dijalankan jika cek poin pertama yaitu 'if' bernilai false. kode ini akan memberikan output "VALUE" dari isi data dictionary di dalam variabel 'nama barang' dan 'jumlah barang' di dalam dictionary tersebut dan outputnya juga akan menampilkan index dari output tersebut dengan menggunakan fungsi 'enumerate'
+<br><br/>
+e. cek data barang
+
+              def cari_data():
+                  keyword = str(input('Masukan keyword untuk mencari data: ')).upper()
+                  found = False
+                  print(f'Berikut barang yang di temukan berdasarkan kata kunci {keyword}:') 
+                  i = 1
+                  for barang in data_barang:
+                      if keyword in barang['nama barang']:
+                          print(f"{i}. {barang['nama barang']} dengan jumlah barang = {barang['jumlah barang']}")
+                          found = True
+                          i+=1
+                          continue    
+                  if not found:
+                      print(f"Uhhh maaf tapi barang yang anda cari menggunakan kata kunci '{keyword}' tidak ditemukan.")
+                      return()
       
   
 
