@@ -193,7 +193,33 @@ e. cek data barang
                   if not found:
                       print(f"Uhhh maaf tapi barang yang anda cari menggunakan kata kunci '{keyword}' tidak ditemukan.")
                       return()
-      
+- input dan pendefinisian
+  
+             keyword = str(input('Masukan keyword untuk mencari data: ')).upper()
+                          found = False
+                          print(f'Berikut barang yang di temukan berdasarkan kata kunci {keyword}:') 
+                          i = 1
+  kode di atas digunakan untuk meminta pengguna untuk memasukkan 'keyword' dan kemudian 'keyword' yang di input oleh pengguna akan di konversi ke dalam format 'UPPERCASEE'.
+  kemudian variabel 'found' di gunakan untuk mendefinisikan bahwa input bernilai 'false'. 'i' digunakan sebagai iterasi penomoran yang akan digunakan untuk menampilkan data.
+- perulangan dan percabangan 1
+
+           for barang in data_barang:
+                              if keyword in barang['nama barang']:
+                                  print(f"{i}. {barang['nama barang']} dengan jumlah barang = {barang['jumlah barang']}")
+                                  found = True
+                                  i+=1
+
+  kode di atas adalah kode yang digunakan untuk menemukan data 'barang' di variabel 'data_barang' berdasarkan keyword yang di masukkan oleh pengguna. berikut rinciannya: <br>
+
+  - sub perulangan dan percabangan 1
+  
+        for barang in data_barang:
+
+    kode di atas digunakan untuk mengiterasi data 'barang' kedalam variabel 'data_barang'
+  - sub perulangan dan percabangan 2
+ 
+        if keyword in barang['nama barang']:
+    kode di atas digunakan untuk menegecek apakah 'keyword' yang berada pada "iterasi" 'barang' ada di variabel 'data_barang' dengan variabel dictionary 'nama_barang' yang berada dalam data list 'data_barang'
   
 
 
