@@ -118,18 +118,18 @@ Baris kode di atas merupakan baris kode yang di gunakan untuk menghapus data bar
     kode di atas merupakan cek poin kedua dimana kode tersebut akan di jalankan jika cek poin pertama yaitu 'input_pilihan == 'Index' tidak terpenuhi. jika input terpenuhi dalam cek poin ini, kode selanjutnya akan di jalanlan yaitu anda diminta memasukkan nama lengkap dari barang yang akan anda hapus. jika tidak terpenuhi, maka akan di lanjutkan ke cek poin selanjutnya.
 - Looping dan pecabangan 3
 
-                      for barang in data_barang:
-                        if barang['nama barang'] == nama_barang:
-                            data_barang.remove(barang)
-                            print(f"Message : Barang dengan nama '{nama_barang}' telah berhasil dihapus")
-                            break
+	  for barang in data_barang:
+	  if barang['nama barang'] == nama_barang:
+	  data_barang.remove(barang)
+	  print(f"Message : Barang dengan nama '{nama_barang}' telah berhasil dihapus")
+	  break
 
     kode di atas merupakan kode sub bagian dari kode pada poin "Looping dan Percabangan 2" yang berupa cek poin perulangan for yang digunakan untuk mengecek apakah input dari pengguna memenuhi syarat atau tidak untuk melanjutkan ke step berikutnya. jika iya, maka kode akan menghapus data barang dan kemudian memunculkan informasi bahwa data barang telah di hapus. Jika tidak, program akan melanjutkannya ke cek poin berikutnya
 
 - Looping dan percabangan 4
 
-                      else:
-                        print(f"Message : Barang dengan nama '{nama_barang}' tidak ditemukan.")  
+	  else:
+	  print(f"Message : Barang dengan nama '{nama_barang}' tidak ditemukan.")  
      kode di atas merupakan bagian dari poin "Looping dan percabangan 3" yang digunakan untuk menampilkan pesan bahwa barang yang ingin di hapus tidak ada atau tidak di temukan
 
 - Looping dan perulangan 5
