@@ -261,5 +261,6 @@ f. edit data
 
 
 
-  
 
+Link  
+<a href="https://github1s.com/Rifyal05/HOMEWORK_RIFYAL-AIDIL-DZIAUL-HAQ_2A/edit/main/readme.md"> Lihat kode di GitHub1s</a>
