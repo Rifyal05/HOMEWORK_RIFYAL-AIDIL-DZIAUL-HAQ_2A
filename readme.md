@@ -244,3 +244,22 @@ f. edit data
 	    data_barang[index_barang] = {'nama barang': nama_barang, 'jumlah barang': jumlah_barang}
 	    print(f"Message : Data barang dengan index {index_barang} telah diubah.") 
 	    return()
+   kode diatas adalah kode yang digunakan untuk mengedit data barang. Berikut rinciannya: <br>
+ - Input
+
+		index_barang = int(input('Masukan index barang : '))
+		nama_barang = str(input('Masukan nama barang: ')).upper()
+		jumlah_barang = int(input('Masukkan jumlah barang: '))
+    kode diatas digunakan untuk meminta pengguna memasukkan input berupa index, nama, dan jumlah barang.
+
+- Mengubah
+
+		data_barang[index_barang] = {'nama barang': nama_barang, 'jumlah barang': jumlah_barang}
+		print(f"Message : Data barang dengan index {index_barang} telah diubah.") 
+		return()
+  setelah pengguna memasukkan data berupa index,nama, dan jumlah, maka variabel 'data_barang' dalam 'index(input pengguna)' akan mengubah value dai variabel 'nama barang' dengan hasil input dari 'nama_barang' dan 'jumlah_barang'. setelah itu, kode akan menampilkan pesan bahwa pengubahan data baang telah berhasil.
+
+
+
+  
+
